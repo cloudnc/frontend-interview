@@ -1,0 +1,90 @@
+@import '~@angular/material/theming';
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+// Palette design generator: http://mcg.mbitson.com/
+$primary: (
+  50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $light-primary-text
+  )
+);
+
+$accent: (
+  50: #e8f7fc,
+  100: #c5eaf8,
+  200: #9edcf3,
+  300: #77ceee,
+  400: #5ac4eb,
+  500: #3db9e7,
+  600: #37b2e4,
+  700: #2faae0,
+  800: #27a2dd,
+  900: #1a93d7,
+  A100: #ffffff,
+  A200: #d7f0ff,
+  A400: #a4dcff,
+  A700: #8bd2ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$interview-primary: mat-palette($primary);
+$interview-accent: mat-palette($accent);
+$interview-warn: mat-palette($mat-red);
+$interview-theme: mat-dark-theme($interview-primary, $interview-accent, $interview-warn);
+
+@include mat-core();
+@include angular-material-theme($interview-theme);
+
+body {
+  background-color: mat-color(map-get($interview-theme, background), background);
+  color: mat-color(map-get($interview-theme, foreground), base);
+}

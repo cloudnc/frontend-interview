@@ -122,5 +122,4 @@ that the URL is `/machines/:machineId`
 
 Finally, good luck, and don't hesitate to get in contact if you need a hand understanding the question.
 
-Once completed, please send back your outcome as a git repository either just as a git repo url that we
-can access, or a zipped directory including the `.git` directory.
+Once completed, please publish your solution to a private Github repo (these are now free!) and share ownership with both https://github.com/zakhenry and https://github.com/maxime1992. You will need to publish it as a standalone repo as Github doesn't allow private forks :(

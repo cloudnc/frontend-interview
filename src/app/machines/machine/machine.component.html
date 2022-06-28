@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-title> Some machine name </mat-card-title>
+
+  <mat-card-content>
+    <dl>
+      <dt class="title">Current status:</dt>
+      <dd>
+        <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+      </dd>
+
+      <!-- update the real number of statuses between parenthesis -->
+      <dt class="title">Statuses (6)</dt>
+
+      <!-- display all the status here -->
+      <dd>
+        <div>
+          <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+          10:15:00 AM
+        </div>
+        <div>
+          <app-machine-status [status]="MachineStatus.OFF"></app-machine-status>
+          10:16:10 AM
+        </div>
+        <div>
+          <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+          10:16:50 AM
+        </div>
+        <div>
+          <app-machine-status [status]="MachineStatus.OFF"></app-machine-status>
+          10:17:20 AM
+        </div>
+        <div>
+          <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+          10:17:45 AM
+        </div>
+        <div>
+          <app-machine-status [status]="MachineStatus.OFF"></app-machine-status>
+          10:18:00 AM
+        </div>
+      </dd>
+    </dl>
+  </mat-card-content>
+</mat-card>

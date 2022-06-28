@@ -1,0 +1,13 @@
+<h1>Sandbox</h1>
+
+<p>Fetch a machine</p>
+
+<button mat-stroked-button (click)="fetchMachineBtnClicked$$.next()">Fetch the "Machine 0"</button>
+
+<pre>{{ machine$ | async | json }}</pre>
+
+<p>Following data come one event at a time via websocket.</p>
+
+<p>Accumulating here for the example into an array to have a better idea of the changes over time</p>
+
+<pre>{{ machinesStatusesChanges$ | async | json }}</pre>

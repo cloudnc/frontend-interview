@@ -1,0 +1,31 @@
+<!-- Delete these instructions once you implement the template! -->
+<p>Hardcoded machine list so you don't have to worry about the layout</p>
+
+<p>You'll have to update it to get the real values...</p>
+<!-- ---------------------------------------------------------- -->
+
+<mat-list>
+  <mat-list-item>
+    <a mat-stroked-button [routerLink]="['machine-id-1']" matBadge="5" matBadgeColor="accent">Machine 1</a>
+
+    <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+  </mat-list-item>
+
+  <mat-list-item>
+    <a mat-stroked-button [routerLink]="['machine-id-2']" matBadge="5" matBadgeColor="accent">Machine 2</a>
+
+    <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+  </mat-list-item>
+
+  <mat-list-item>
+    <a mat-stroked-button [routerLink]="['machine-id-3']" matBadge="5" matBadgeColor="accent">Machine 3</a>
+
+    <app-machine-status [status]="MachineStatus.OFF"></app-machine-status>
+  </mat-list-item>
+
+  <mat-list-item>
+    <a mat-stroked-button [routerLink]="['machine-id-4']" matBadge="5" matBadgeColor="accent">Machine 4</a>
+
+    <app-machine-status [status]="MachineStatus.ON"></app-machine-status>
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+
+.title {
+  font-weight: bold;
+}
+
+mat-card {
+  padding: 10px;
+  min-width: 400px;
+}
+
+mat-card-title {
+  color: var(--mat-sys-primary);
+}
